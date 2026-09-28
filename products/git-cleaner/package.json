@@ -1,0 +1,12 @@
+{
+  "name": "git-cleaner",
+  "version": "1.0.0",
+  "description": "Remove sensitive files from git history. Zero dependencies.",
+  "main": "bin/cli.js",
+  "bin": { "git-cleaner": "bin/cli.js" },
+  "scripts": { "test": "node bin/cli.js --help" },
+  "keywords": ["git", "security", "cli", "devtools", "secrets"],
+  "author": "",
+  "license": "MIT",
+  "engines": { "node": ">=14" }
+}

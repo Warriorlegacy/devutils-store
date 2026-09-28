@@ -1,0 +1,12 @@
+{
+  "name": "commit-helper",
+  "version": "1.0.0",
+  "description": "Generate conventional commit messages from staged diff. Zero dependencies.",
+  "main": "bin/cli.js",
+  "bin": { "commit-helper": "bin/cli.js" },
+  "scripts": { "test": "node bin/cli.js --help" },
+  "keywords": ["git", "commit", "cli", "devtools", "conventional-commits"],
+  "author": "",
+  "license": "MIT",
+  "engines": { "node": ">=14" }
+}

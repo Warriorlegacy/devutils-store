@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevUtils — Minimal CLI Tools for Developers</title>
+  <meta name="description" content="3 zero-dependency CLI tools to speed up your git workflow. $9-$12 each, or $19 for all three.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      line-height: 1.6;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tagline {
+      font-size: 1.25rem;
+      color: #888;
+      margin-bottom: 40px;
+    }
+    .bundle {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      margin-bottom: 60px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .bundle h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .bundle .price {
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 20px 0;
+    }
+    .bundle .save {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    .bundle .cta {
+      display: inline-block;
+      background: #fff;
+      color: #667eea;
+      padding: 15px 40px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: transform 0.2s;
+    }
+    .bundle .cta:hover { transform: translateY(-2px); }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    .product {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 30px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .product:hover {
+      transform: translateY(-4px);
+      border-color: #667eea;
+    }
+    .product-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .product h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #667eea;
+    }
+    .product .price {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+    .product p {
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+    .product .cta {
+      display: inline-block;
+      background: #667eea;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .product .cta:hover { background: #5568d3; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+    .feature {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+    .feature h3 {
+      color: #667eea;
+      margin-bottom: 10px;
+    }
+    .feature p {
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .faq {
+      margin-top: 60px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .faq h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .faq-item {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+    .faq-item h3 {
+      color: #667eea;
+      margin-bottom: 10px;
+    }
+    .faq-item p {
+      color: #aaa;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+      border-top: 1px solid #222;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DevUtils</h1>
+    <p class="tagline">Minimal CLI tools for developers who ship fast.</p>
+  </header>
+
+  <div class="container">
+    <div class="bundle">
+      <h2>🎁 Get All 3 Tools</h2>
+      <div class="price">$19</div>
+      <p class="save">Save $11 vs buying individually ($30)</p>
+      <a href="https://gumroad.com/l/devutils-bundle" class="cta">Buy Bundle — Instant Download</a>
+    </div>
+
+    <div class="products">
+      <div class="product">
+        <div class="product-icon">📋</div>
+        <h3>changelog-cli</h3>
+        <div class="price">$9</div>
+        <p>Generate beautiful changelogs from git history in seconds. Zero dependencies, works offline.</p>
+        <a href="https://gumroad.com/l/changelog-cli" class="cta">Buy $9</a>
+      </div>
+
+      <div class="product">
+        <div class="product-icon">🔒</div>
+        <h3>git-cleaner</h3>
+        <div class="price">$7</div>
+        <p>Scan git history for sensitive files (.env, keys, credentials) and remove them permanently.</p>
+        <a href="https://gumroad.com/l/git-cleaner" class="cta">Buy $7</a>
+      </div>
+
+      <div class="product">
+        <div class="product-icon">💬</div>
+        <h3>commit-helper</h3>
+        <div class="price">$9</div>
+        <p>Generate conventional commit messages from your staged diff. Copy to clipboard instantly.</p>
+        <a href="https://gumroad.com/l/commit-helper" class="cta">Buy $9</a>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>⚡ Zero Dependencies</h3>
+        <p>All tools are ~100 lines of vanilla Node.js. No npm install hell.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Works Offline</h3>
+        <p>No API calls, no network required. Your code stays private.</p>
+      </div>
+      <div class="feature">
+        <h3>💻 Cross-Platform</h3>
+        <p>Works on macOS, Linux, and Windows with Node.js >= 14.</p>
+      </div>
+      <div class="feature">
+        <h3>📄 MIT Licensed</h3>
+        <p>Use freely in personal and commercial projects. Fork and modify.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>Do these tools work on Windows?</h3>
+        <p>Yes! All tools work on macOS, Linux, and Windows with Node.js >= 14.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I use these in commercial projects?</h3>
+        <p>Absolutely. All tools are MIT-licensed, so you can use them freely in personal and commercial projects.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What if I'm not satisfied?</h3>
+        <p>30-day no-questions-asked refund. If the tools don't save you time, I'll refund you.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I get updates?</h3>
+        <p>You'll receive an email with the download link. Future updates are free.</p>
+      </div>
+    </div>
+
+    <div class="bundle">
+      <h2>🎁 Get All 3 Tools</h2>
+      <div class="price">$19</div>
+      <p class="save">Save $11 vs buying individually ($30)</p>
+      <a href="https://gumroad.com/l/devutils-bundle" class="cta">Buy Bundle — Instant Download</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 DevUtils. Built by developers, for developers.</p>
+  </footer>
+</body>
+</html>
+
